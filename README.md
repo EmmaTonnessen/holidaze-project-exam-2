@@ -1,4 +1,4 @@
-# LOGINDETAILS:
+# LOGIN DETAILS:
 Contact me for login details.
 
 # Holidaze
