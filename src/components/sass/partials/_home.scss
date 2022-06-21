@@ -1,0 +1,59 @@
+// Background image
+.background-container {
+    background-image: url(../../../images/holidaze-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 150px;
+    margin-top: -60px;
+    
+}   
+
+// Header
+.home-h1 {
+    font-weight: 400;
+    animation: ease-in fadeIn 4s;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 95%;
+    text-shadow: $light-boxshadow;
+}
+
+// Cards 
+.featured-container {
+    margin-top: -50px;
+}
+
+@media only screen and (min-width: $desktop-width) {
+    // Header
+
+    .home-h1 {
+        margin-top: 80px;
+    }
+
+    // Background image
+    .background-container {
+        height: 500px;
+        margin-top: -120px;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    // Featured carousel
+
+    .featured-container {
+        margin-top: -100px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 37%;
+
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+
+    .featured-list__card {
+        margin-bottom: 20px;
+    }
+}

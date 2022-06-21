@@ -1,0 +1,62 @@
+// Source: https://www.youtube.com/watch?v=3yfswsnD2sw
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 53%;
+    gap: 30px;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    &__element {
+        box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.3);
+        margin-bottom: 40px;
+        margin-top: 70px;
+    }
+
+    &__element > img {
+        inline-size: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+
+
+// Carousel Modal
+
+.carousel-open {
+    grid-auto-columns: 60%;
+    position: fixed;
+    z-index: 10;
+    background: rgba(black, 0.8);
+    box-shadow: 0 0 0 30em rgba(black, 0.8);
+    overflow-y: hidden;
+
+    &__element > img {
+        aspect-ratio: 5 / 4;
+    }
+}
+
+@media only screen and (min-width: $desktop-width) {
+    .carousel {
+        grid-auto-columns: 41%;
+
+            &__element {
+                margin-top: 30px;
+            }
+
+            &__element > img {
+                aspect-ratio: 16 / 9;
+            }
+    }
+
+
+    // Carousel modal 
+
+    .carousel-open {
+        grid-auto-columns: 50%;
+    }
+}
+
+
