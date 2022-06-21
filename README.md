@@ -31,7 +31,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Noroff-FEU-Assignments/project-exam-2-Emhato
+git clone https://github.com/EmmaTonnessen/holidaze-project-exam-2.git
 ```
 
 2. Install the dependencies:
